@@ -1,0 +1,27 @@
+﻿@{
+    Layout = null;
+    if (Session["userID"] == null)
+    {
+        Response.Redirect("~/Login/Index");
+    }
+
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Inicio</title>
+</head>
+<body>
+    <div>
+        <h1>Hola Junior</h1>
+    </div>
+    <div>
+        <h1>Dashboard</h1>
+        <a href="@Url.Action("LogOut","Login")">LogOut</a>
+    </div>
+</body>
+</html>
