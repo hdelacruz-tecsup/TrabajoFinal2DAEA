@@ -6,6 +6,9 @@
     <edmx:Diagrams>
       <Diagram DiagramId="4a57efb55cbb4cbaa39b3225768b3a51" Name="Diagram1">
         <EntityTypeShape EntityType="TrabajoFinalModel.User" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrabajoFinalModel.detalle_factura" Width="1.5" PointX="5.625" PointY="1.125" />
+        <EntityTypeShape EntityType="TrabajoFinalModel.factura" Width="1.5" PointX="3.375" PointY="1" />
+        <AssociationConnector Association="TrabajoFinalModel.FK__detalle_f__idFac__5535A963" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

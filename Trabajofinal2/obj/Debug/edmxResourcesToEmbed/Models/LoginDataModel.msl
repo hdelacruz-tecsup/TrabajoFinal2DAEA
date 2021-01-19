@@ -10,5 +10,33 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="detalle_factura">
+      <EntityTypeMapping TypeName="TrabajoFinalModel.detalle_factura">
+        <MappingFragment StoreEntitySet="detalle_factura">
+          <ScalarProperty Name="igv" ColumnName="igv" />
+          <ScalarProperty Name="subtotal" ColumnName="subtotal" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="producto" ColumnName="producto" />
+          <ScalarProperty Name="idFactura" ColumnName="idFactura" />
+          <ScalarProperty Name="idDetalle" ColumnName="idDetalle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="facturas">
+      <EntityTypeMapping TypeName="TrabajoFinalModel.factura">
+        <MappingFragment StoreEntitySet="factura">
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="igv" ColumnName="igv" />
+          <ScalarProperty Name="subtotal" ColumnName="subtotal" />
+          <ScalarProperty Name="name_cliente" ColumnName="name_cliente" />
+          <ScalarProperty Name="name_vendedor" ColumnName="name_vendedor" />
+          <ScalarProperty Name="fecha_fact" ColumnName="fecha_fact" />
+          <ScalarProperty Name="numero_fact" ColumnName="numero_fact" />
+          <ScalarProperty Name="idFactura" ColumnName="idFactura" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

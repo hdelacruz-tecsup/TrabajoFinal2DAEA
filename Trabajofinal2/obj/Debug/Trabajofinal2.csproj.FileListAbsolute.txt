@@ -80,3 +80,11 @@ E:\6to\Desarrollo de Aplicaciones Empre Avanzado\ejercicos\Trabajofinal2\Trabajo
 E:\6to\Desarrollo de Aplicaciones Empre Avanzado\ejercicos\Trabajofinal2\Trabajofinal2\obj\Debug\Trabajofinal2.csproj.CopyComplete
 E:\6to\Desarrollo de Aplicaciones Empre Avanzado\ejercicos\Trabajofinal2\Trabajofinal2\obj\Debug\Trabajofinal2.dll
 E:\6to\Desarrollo de Aplicaciones Empre Avanzado\ejercicos\Trabajofinal2\Trabajofinal2\obj\Debug\Trabajofinal2.pdb
+E:\6to\Desarrollo de Aplicaciones Empre Avanzado\ejercicos\Trabajofinal2\Trabajofinal2\bin\Newtonsoft.Json.dll
+E:\6to\Desarrollo de Aplicaciones Empre Avanzado\ejercicos\Trabajofinal2\Trabajofinal2\bin\System.Net.Http.Formatting.dll
+E:\6to\Desarrollo de Aplicaciones Empre Avanzado\ejercicos\Trabajofinal2\Trabajofinal2\bin\System.Web.Http.dll
+E:\6to\Desarrollo de Aplicaciones Empre Avanzado\ejercicos\Trabajofinal2\Trabajofinal2\bin\Newtonsoft.Json.xml
+E:\6to\Desarrollo de Aplicaciones Empre Avanzado\ejercicos\Trabajofinal2\Trabajofinal2\bin\System.Net.Http.Formatting.xml
+E:\6to\Desarrollo de Aplicaciones Empre Avanzado\ejercicos\Trabajofinal2\Trabajofinal2\bin\System.Web.Http.xml
+E:\6to\Desarrollo de Aplicaciones Empre Avanzado\ejercicos\Trabajofinal2\Trabajofinal2\bin\es\System.Net.Http.Formatting.resources.dll
+E:\6to\Desarrollo de Aplicaciones Empre Avanzado\ejercicos\Trabajofinal2\Trabajofinal2\bin\es\System.Web.Http.resources.dll

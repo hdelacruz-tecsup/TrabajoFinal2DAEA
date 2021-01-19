@@ -10,5 +10,51 @@
   </EntityType>
   <EntityContainer Name="TrabajoFinalEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="detalle_factura" EntityType="TrabajoFinalModel.detalle_factura" />
+    <EntitySet Name="facturas" EntityType="TrabajoFinalModel.factura" />
+    <AssociationSet Name="FK__detalle_f__idFac__5535A963" Association="TrabajoFinalModel.FK__detalle_f__idFac__5535A963">
+      <End Role="factura" EntitySet="facturas" />
+      <End Role="detalle_factura" EntitySet="detalle_factura" />
+    </AssociationSet>
   </EntityContainer>
+  <EntityType Name="detalle_factura">
+    <Key>
+      <PropertyRef Name="idDetalle" />
+    </Key>
+    <Property Name="idDetalle" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idFactura" Type="Int32" />
+    <Property Name="producto" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="precio" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="cantidad" Type="Int32" />
+    <Property Name="subtotal" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="igv" Type="Decimal" Precision="8" Scale="2" />
+    <NavigationProperty Name="factura" Relationship="TrabajoFinalModel.FK__detalle_f__idFac__5535A963" FromRole="detalle_factura" ToRole="factura" />
+  </EntityType>
+  <EntityType Name="factura">
+    <Key>
+      <PropertyRef Name="idFactura" />
+    </Key>
+    <Property Name="idFactura" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="numero_fact" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_fact" Type="DateTime" Precision="3" />
+    <Property Name="name_vendedor" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="name_cliente" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="subtotal" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="igv" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="total" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="estado" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="detalle_factura" Relationship="TrabajoFinalModel.FK__detalle_f__idFac__5535A963" FromRole="factura" ToRole="detalle_factura" />
+  </EntityType>
+  <Association Name="FK__detalle_f__idFac__5535A963">
+    <End Type="TrabajoFinalModel.factura" Role="factura" Multiplicity="0..1" />
+    <End Type="TrabajoFinalModel.detalle_factura" Role="detalle_factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="factura">
+        <PropertyRef Name="idFactura" />
+      </Principal>
+      <Dependent Role="detalle_factura">
+        <PropertyRef Name="idFactura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

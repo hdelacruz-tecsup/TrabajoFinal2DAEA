@@ -26,5 +26,7 @@ namespace Trabajofinal2.Models
         }
     
         public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<detalle_factura> detalle_factura { get; set; }
+        public virtual DbSet<factura> facturas { get; set; }
     }
 }
